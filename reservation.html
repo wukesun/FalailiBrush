@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <script src="js/bootstrap.js"></script>
+    <style>
+        .bg-img>img{
+            text-align: center;
+            width: 100%;
+        }
+        section>form>div{
+            text-align: center;
+        }
+        .myname , .myphone ,.myadd{
+            font-size: 4vw;
+            width: 91%;
+            height: 2%;
+            padding: 4% 0px 4% 11%;
+            border-radius: 8px;
+            outline:none;
+            border: 1px solid #DBDBDB;
+        }
+        .mymessage{
+            font-size: 4vw;
+            width: 45%;
+            /* position: absolute; */
+            /* left: 4%; */
+            display: inherit;
+            margin-left: 4.4%;
+            padding: 4% 0px 4% 11%;
+            border-radius: 8px;
+            outline: none;
+            border: 1px solid #DBDBDB;
+        }
+        .user,.phone,.message,.prompt,.adds{
+            position: relative;
+        }
+        .icon-user , .icon-phone , .icon-message ,.icon-add{
+            position: absolute;
+            background-repeat: no-repeat;   /*设置图片不重复*/
+            background-position: 0px 0px;
+            background-size: 100%;
+            width: 9%;
+            height: 100%;
+            left: 5%;
+            top: 15%;
+            
+        }
+        .icon-user{
+            background-image: url('img/user.png'); /*引入图片*/
+        }
+        .icon-phone{
+            background-image: url('img/phone.png'); /*引入图片*/  
+        }
+        .icon-message{
+            background-image: url('img/message.png'); /*引入图片*/ 
+        }
+        .icon-add{
+            background-image: url('img/adds.png'); /*引入图片*/ 
+        }
+        .icon-prompt{
+            background-image: url('img/prompt.png');
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            background-size: 100%;
+            width: 6%;
+            height: 100%;
+            left: 3%;
+            top: -8%;
+        }
+        .message>.message-btn{
+            position: absolute;
+            right: 15%;
+            top: 7px;
+            height: 84%;
+        }
+        .message>.message-btn>button{
+            font-size: 4vw;
+            width: 110%;
+            height: 80%;
+        }
+        .city{
+            font-size: 4vw;
+            width: 91%;
+            height: 2%;
+            padding: 2% 0px 2% 0%;
+            border-radius: 8px;
+            outline: none;
+            border: 1px solid #DBDBDB;
+            position: relative;
+            left: 4.5%;
+        }
+        .architecture{
+            display:block;
+            width:24%;
+            height:100%;
+            box-sizing:border-box;
+            background:none;
+            outline:none;
+            -webkit-appearance:none;
+            padding:0 5px;
+            line-height:inherit;
+            color:inherit;
+            cursor:default;
+            font-size:3.8vw;
+            position:relative;
+            z-index:3;
+            padding: 4%;
+            left: 4.6%;
+            border-radius: 8px;
+            border: 1px solid #DBDBDB;
+        }
+        .okbtn{
+            width: 70%;
+            font-size: 5vw;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <form action="">
+            <div class='bg-img'>
+                <img src="img/lijiyuyue.jpg" alt="">
+            </div>
+            <div style="height: 10px;"></div>
+            <div class='user'>
+                <i class='icon-user'></i>
+                <input type="text" class="myname" placeholder="请输入姓名">
+            </div>
+            <div style="height: 10px;"></div>
+            <div class='phone'>
+                <i class='icon-phone'></i>
+                <input type="text" class='myphone' placeholder="请输入电话">
+            </div>
+            <div style="height: 10px;"></div>
+            <div class='message'>
+                <i class='icon-message'></i>
+                <input type="text" class='mymessage' onkeyup="value=value.replace(/[^\d]/g,'')" maxlength="6"  placeholder="短信验证码">
+                <div class='message-btn'>
+                    <button class='btn btn-primary'>获取验证码</button>
+                </div>
+            </div>
+            <div style="height: 5px;"></div>
+            <div class='prompt'>
+                <i class='icon-prompt'></i>
+                <p>建议填写以下信息以便我们工作人员及时与您联系</p>
+            </div>
+            <div style="height: -5px;"></div>
+            <div class='city'>
+                <select id="province" onchange="chooseProvince(this)">
+                    <option value="1">请选择省</option>
+                </select>
+                    <select id="city" onchange="chooseCity(this)">
+                    <option value="2">请选择市</option>
+                </select>
+                    <select id="area">
+                    <option value="3">请选择区</option>
+                </select>
+            </div>
+            <div style="height: 5px;"></div>
+            <div class='adds'>
+                <i class='icon-add'></i>
+                <input class='myadd' type="text" placeholder="请输入您的详细地址">
+            </div>
+            <div style="height: 5px;"></div>
+            <select class='architecture'>
+                <option value="volvo">建筑类型</option>
+                <option value="saab">别墅</option>
+                <option value="opel">公寓</option>
+                <option value="audi">其他</option>
+            </select>
+            <div style="height: 10px;"></div>
+            <div class='submission'>
+                <button class='okbtn btn btn-primary'>立即预约</button>
+            </div>
+        </form>
+
+    </section>
+
+    <script src="js/city.js"></script>
+</body>
+</html>

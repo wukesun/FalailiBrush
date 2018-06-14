@@ -1,0 +1,134 @@
+<body>  
+    <script src='js/jquery.js'></script>
+        <style>  
+                body{  
+                    margin: 0px;  
+                    padding: 0px;  
+                }  
+                #main{  
+                   position: relative;  
+                   height: 100%;  
+                   overflow: hidden;  
+                   top:0;  
+                   left: 0;  
+                }  
+                #content{  
+                   height: 100%;  
+                   overflow: hidden;  
+          
+                }  
+                #menu{  
+                    height: 100%;  
+                    width: 300px;  
+                    position: absolute;  
+                    top:0px;  
+                    left:100%;  
+                    z-index: 1;  
+                    background: darkturquoise;  
+                }  
+                #background{  
+                    background: #3F4347;  
+                    position:absolute;  
+                    top:0;  
+                    left:0;  
+                }  
+                #menu h1{  
+                    font-size: 15px;  
+                    padding: 5px;  
+                    width: 30px;  
+                    background: red;  
+                    text-align: center;  
+                    cursor:pointer;  
+                }  
+                #close{  
+                    float: right;  
+                    margin-right:10px;  
+                }  
+                #img1{  
+                    position: absolute;  
+                    top: 20px;  
+                    right: 20px;  
+                    cursor:pointer;  
+                }  
+            </style>  
+        <div id="main">  
+      
+            <div id="content">  
+                <img src="http://p2.qhimg.com/t01a17710c9463ec2d5.jpg" style="width:  
+                100%;height: 100%"/>//背景图片  
+                <img src="1.png" style="width: 38px;height: 37px" id="img1">//这张图片点击后调用菜单栏scrollTo(出现)动画  
+            </div>  
+      
+            <div id="menu" hidden="hidden">//菜单栏一开始是隐藏的  
+                <div id="close">  
+                  <h1>关闭</h1>//点击后调用菜单栏hiddenTo(隐藏)动画  
+                </div>  
+            </div>  
+      
+        </div>  
+      
+        <div id="background" hidden="hidden">//半透明背景默认隐藏  
+        </div>  
+        <script>
+            function Swipe(container){  
+  
+            var $element = $("#"+container+":hidden");  
+            var $background = $("#background:hidden");  
+
+            var $main = $("#main");  
+            var height = $main.height();  
+            var width = $main.width();  
+
+
+            $background.css({  
+            height:height +"px",  
+            width:width + "px"  
+            });  
+
+            var swipe = {};  
+
+  //显示动画  
+  swipe.scrollTo = function(speed){  
+     $element.show();  
+     $element.animate({  
+         left: '-=300'  
+     },speed,function(){  
+         $background.fadeTo("slow",0.5);  
+     });  
+
+
+      return this;  
+  };  
+
+  //隐藏动画  
+  swipe.hiddenTo = function(speed){  
+      $element.animate({  
+          left: '+=300'  
+      },speed,function(){  
+          $background.fadeTo("slow",0);  
+          $element.hide();  
+          $background.hide();  
+      });  
+  };  
+
+  return swipe;  
+
+}  
+$(function() { 
+    var swipe =  Swipe("menu");  
+  
+    var $background = $("#background");  
+    $background.click(function(){  
+        swipe.hiddenTo(2000);  
+    });  
+    var $close = $("#close");  
+    $close.click(function () {  
+        swipe.hiddenTo(2000);  
+    });  
+    var img1 = $("#img1");  
+    img1.click(function(){  
+        swipe.scrollTo(2000);  
+    });  
+});  
+        </script>
+    </body>  

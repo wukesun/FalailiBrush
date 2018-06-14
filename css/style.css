@@ -1,0 +1,605 @@
+
+/* ======================== */
+/* 关于我们 */
+/* /* .center-One{
+    position: relative;
+}
+/* 关于我们标题 */
+.center-One>.One-title{
+    text-align: center;
+}
+.center-One>.One-title>p{
+    text-align: center;
+    font-size: 3em;
+    display: inline;
+    font-weight: 600;
+}
+.center-One>.One-title>p:nth-child(1){
+    color: rgb(0, 118, 202);
+}
+.center-One>.One-title>p:nth-child(2){
+    color: rgb(67, 67, 67);
+}
+.center-One>.One-title-cn{
+    font-size: 0.8em;
+}
+.center-One>.One-line{
+    text-align: center;
+    margin: 10px 0 25px 0;
+}
+/* ================================ */
+/* 关于我们内容 */
+.center-One>.One-center{
+    width: 60%;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto;
+}
+.center-One>.One-center>a>span{
+    color: rgb(102, 102, 102);
+    
+}
+/* =================================== */
+/* 关于我们点击按钮 */
+.center-One>.One-click{
+    text-align: center;
+    margin-top: 10px;
+}
+.center-One>.One-click>button{
+    font-size: 40px;
+}
+/* =============================== */
+/* 装修案例 */
+/* 装修案例头部 */
+.center{
+    position: relative;
+    margin-top: 100px;
+}
+.center>.center-title{
+    text-align: center;
+} 
+.center>.center-title>p{
+    text-align: center;
+    font-size: 3em;
+    display: inline;
+    font-weight: 600;
+}
+.center>.center-title>p:nth-child(1){
+    color: rgb(0, 118, 202);
+}
+.center>.center-title>p:nth-child(2){
+    color: rgb(67, 67, 67);
+}
+.center>.center-title-cn{
+    font-size: 0.8em;
+}
+/* .center>.show-more{
+    display: inline;
+}
+.center>.show-more>p{
+    font-size: 2em;
+    float: right;
+} */
+.center>.center-line{
+    text-align: center;
+    margin: 10px 0 25px 0;
+}
+.center>.center-line>p{
+    font-size: 3vw;
+    text-align: right;
+    margin-right: 20px;
+    color: red;
+    cursor: pointer;
+}
+/* ======================== */
+/* 装修案例内容 */
+.center>.Two-center{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.center>.Two-center>.Two-center-text{
+    width: 49%;
+    /* height: 450px; */
+    border:1px solid rgb(194, 194, 194);
+}
+.center>.Two-center>.Two-center-text>.Two-center-img{
+    text-align: center;
+}
+.center>.Two-center>.Two-center-text>.Two-center-img>img{
+    width: 90%;
+    margin: 20px 0 auto 0;
+}
+.center>.Two-center>.Two-center-text>.Two-center-title{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+.center>.Two-center>.Two-center-text>.Two-center-title>p:nth-child(1){
+    font-weight: 800;
+}
+.center>.Two-center>.Two-center-text>.Two-center-title>p:not(:first-child){
+    display: inline;
+    font-size: 1em;
+    font-weight: 700;
+    color: #acacac;
+}
+.center>.Two-center>.Two-center-text>.Two-center-title>p:nth-child(3){
+    color: red;
+}
+/* 装修方案1-现住房 */
+.center>.Two-center>.house-One{
+    width: 90%;
+    height: 80%;
+    background-color: white;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    z-index: 17;
+}
+.center>.Two-center>.house-One>.house-close{
+    float: right;
+    font-size: 7vw;
+    color: white;
+    width: 10%;
+    height: 4.5%;
+    text-align: center;
+    background-color: #67a3d2;
+}
+/* 现住房头部内容 */
+.center>.Two-center>.house-One>.house-tatle{
+    font-size: 6vw;
+    color: #67a3d2;
+    text-align: center;
+    margin-top: 9%;
+}
+.center>.Two-center>.house-One>.house-center{
+    font-size: 3vw;
+    text-align: center;
+}
+.center>.Two-center>.house-One>.house-img{
+    width: 75%;
+    height: 55%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 45px;
+}
+.center>.Two-center>.house-One>.house-img>div{
+    width: 30%;
+}
+.center>.Two-center>.house-One>.house-img>div>div:nth-child(1){
+    position: relative;
+}
+.center>.Two-center>.house-One>.house-img>div>div>img{
+    width: 100%;
+}
+.center>.Two-center>.house-One>.house-img>div>div>img:nth-child(1){
+    border-radius: 15%;
+}
+.center>.Two-center>.house-One>.house-img>.house-img-center>div>.check{
+    position: absolute;
+    width: 40%;
+    top: 65px;
+    left: 60px;
+}
+.out{
+    display: none;
+}
+.center>.Two-center>.house-One>.house-img>div>div>p{
+    font-size: 4vw;
+    text-align: center;
+}
+/* 房屋装修1下一步按钮 */
+.center>.Two-center>.house-One>div>button{
+    font-size: 5vw;
+    width: 30%;
+}
+.center>.Two-center>.house-One>div>p{
+    margin-top: 20px;
+    font-size: 3vw;
+}
+/* 装修方案2-新房 */
+.center>.Two-center>.house-Two{
+    width: 90%;
+    height: 70%;
+    background-color: white;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    z-index: 17;
+}
+.center>.Two-center>.house-Two>.house-close{
+    float: right;
+    font-size: 7vw;
+    color: white;
+    width: 10%;
+    height: 5.5%;
+    text-align: center;
+    background-color: #67a3d2;
+}
+/* 新房头部内容 */
+.center>.Two-center>.house-Two>.house-tatle{
+    font-size: 6vw;
+    color: #67a3d2;
+    text-align: center;
+    margin-top: 9%;
+}
+.center>.Two-center>.house-Two>.house-center{
+    font-size: 5vw;
+    text-align: center;
+}
+.center>.Two-center>.house-Two>.house-img{
+    width: 75%;
+    height: 55%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 45px;
+}
+.center>.Two-center>.house-Two>.house-img>div{
+    width: 100%;
+}
+.center>.Two-center>.house-Two>.house-img>div>div:nth-child(1){
+    position: relative;
+}
+.center>.Two-center>.house-Two>.house-img>div>div>img{
+    width: 100%;
+}
+.center>.Two-center>.house-Two>.house-img>div>div>img:nth-child(1){
+    border-radius: 50%;
+}
+.center>.Two-center>.house-Two>.house-img>.house-img-center>div>.check{
+    position: absolute;
+    width: 15%;
+    top: 90px;
+    left: 45%;
+}
+.out{
+    display: none;
+}
+.center>.Two-center>.house-Two>.house-img>div>div>p{
+    margin-top: 15px;
+    font-size: 5vw;
+    text-align: center;
+    color: #539ad1;
+}
+/* 房屋装修内容详情 */
+.center>.Two-center>.renovation-center{
+    width: 90%;
+    height: 85%;
+    background-color: white;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    z-index: 17;
+}
+.center>.Two-center>.renovation-center>.house-close{
+    float: right;
+    font-size: 7vw;
+    color: white;
+    width: 10%;
+    height: 4.5%;
+    text-align: center;
+    background-color: #67a3d2;
+}
+.center>.Two-center>.renovation-center>.house-off{
+    float: left;
+    font-size: 7vw;
+    color: white;
+    width: 10%;
+    height: 4.5%;
+    text-align: center;
+    background-color: #67a3d2;
+}
+/* 房屋装修头部内容 */
+.center>.Two-center>.renovation-center>.house-tatle{
+    font-size: 6vw;
+    color: #67a3d2;
+    text-align: center;
+    margin-top: 9%;
+}
+.center>.Two-center>.renovation-center>.renovation-zhuti{
+    height: 500px;
+}
+.renovation-title{
+    width: 84.5%;
+    margin: 0 auto;
+    text-align: center;
+}
+.center>.Two-center>.renovation-center>.renovation-zhuti>.renovation-title>.title-bg{
+    background:url('../img/problem_bg.jpg') no-repeat center top;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    padding: 3px .3rem;
+    font-size: 1.5em;
+    color: #fff;
+    position: relative;
+}
+.renovation-title .title-bg span+i{
+    margin: 0 5px;
+}
+.renovation-title .brief{
+    font-style: italic;
+    font-size: 2.3em;
+    color: #67a3d2;
+    margin-bottom: 0;
+    line-height: 130%;
+}
+.renovation-title .text_indent{
+    text-indent: -1.3em;
+}
+.center>.Two-center>.renovation-center>.renovation-zhuti>.renovation-title>.jieshao{
+    font-size: 2.3em;
+    color: #7d7d7d;
+    text-align: center;
+    margin-top: 20px;
+}
+.center>.Two-center>.renovation-center>.renovation-zhuti>.renovation-title>.title-bg>span{
+    font-size: 3vw;
+}
+.renovation-title .line{
+    margin: .15rem auto .1rem;
+    position: relative;
+    text-align: center;
+    color: #474747;
+    font-size: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+}
+.renovation-title .line:before,.renovation-title .line:after{
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 30%;
+    background: #ddd;
+    top: 50%;
+}
+.renovation-title .line:before{
+    left: 0;
+}
+.renovation-title .line:after {
+    right: 0;
+}
+/* 现住房详情图片 */
+.renovation-title ul{
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.renovation-title .list li{
+    width: 30.46%;
+    display: inline-block;
+    margin-right: 2%;
+}
+.renovation-title .list1 li{
+    width: 22.46%;
+    display: inline-block;
+    margin-right: 2%;
+}
+.renovation-title ul li img{
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.renovation-title ul li p.house_text{
+    font-size: 2.3em;
+    color: #646464;
+    margin-bottom: 0;
+    line-height: 2.3em;
+    font-weight: 500;
+    position: static;
+    background: none;
+    padding-left: 0;
+}
+.renovation-zhuti .service{
+    text-align: center;
+    width: 100%;
+    /* position: absolute; */
+    bottom: 2.3em;
+}
+.renovation-zhuti .service .buttonText{
+    padding: 5px 25px;
+    margin: .3em auto .1rem;
+    background: #67a3d2;
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-size: 3em;
+    width: 35%;
+    height: auto;
+    line-height: normal;
+    letter-spacing: normal;
+}
+.renovation-zhuti .service p{
+    margin-left: 0;
+    color: #7a7a7a;
+    font-weight: 400;
+    letter-spacing: -1px;
+    font-size: 2em;
+}
+/* ======================== */
+.center>.Two-center>.newhouse-center{
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    z-index: 17;
+}
+.center>.Two-center>.newhouse-center>.house-close{
+    float: right;
+    font-size: 7vw;
+    color: white;
+    width: 10%;
+    height: 4.5%;
+    text-align: center;
+    background-color: #67a3d2;
+}
+.center>.Two-center>.newhouse-center>.house-off{
+    float: left;
+    font-size: 7vw;
+    color: white;
+    width: 10%;
+    height: 4.5%;
+    text-align: center;
+    background-color: #67a3d2;
+}
+/* 房屋装修头部内容 */
+.center>.Two-center>.newhouse-center>.house-tatle{
+    font-size: 6vw;
+    color: #67a3d2;
+    text-align: center;
+    margin-top: 9%;
+}
+.center>.Two-center>.newhouse-center>.renovation-zhuti{
+    height: 500px;
+}
+.renovation-title{
+    width: 84.5%;
+    margin: 0 auto;
+    text-align: center;
+}
+.center>.Two-center>.newhouse-center>.renovation-zhuti>.renovation-title>.title-bg{
+    background:url('../img/problem_bg.jpg') no-repeat center top;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    padding: 3px .3rem;
+    font-size: 1.5em;
+    color: #fff;
+    position: relative;
+}
+.renovation-title .title-bg span+i{
+    margin: 0 5px;
+}
+.renovation-title .brief{
+    font-style: italic;
+    font-size: 2.3em;
+    color: #67a3d2;
+    margin-bottom: 0;
+    line-height: 130%;
+}
+.renovation-title .text_indent{
+    text-indent: -1.3em;
+}
+.center>.Two-center>.newhouse-center>.renovation-zhuti>.renovation-title>.jieshao{
+    font-size: 2.3em;
+    color: #7d7d7d;
+    text-align: center;
+    margin-top: 20px;
+}
+.center>.Two-center>.newhouse-center>.renovation-zhuti>.renovation-title>.title-bg>span{
+    font-size: 3vw;
+}
+.renovation-title .line{
+    margin: .15rem auto .1rem;
+    position: relative;
+    text-align: center;
+    color: #474747;
+    font-size: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+}
+.renovation-title .line:before,.renovation-title .line:after{
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 30%;
+    background: #ddd;
+    top: 50%;
+}
+.renovation-title .line:before{
+    left: 0;
+}
+.renovation-title .line:after {
+    right: 0;
+}
+/* 现住房详情图片 */
+.renovation-title ul{
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.renovation-title .list li{
+    width: 30.46%;
+    display: inline-block;
+    margin-right: 2%;
+}
+.renovation-title .list1 li{
+    width: 22.46%;
+    display: inline-block;
+    margin-right: 2%;
+}
+.renovation-title ul li img{
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.renovation-title ul li p.house_text{
+    font-size: 2.3em;
+    color: #646464;
+    margin-bottom: 0;
+    line-height: 2.3em;
+    font-weight: 500;
+    position: static;
+    background: none;
+    padding-left: 0;
+}
+.renovation-zhuti .service{
+    text-align: center;
+    width: 100%;
+    /* position: absolute; */
+    bottom: 2.3em;
+}
+.renovation-zhuti .service .buttonText{
+    padding: 5px 25px;
+    margin: .3em auto .1rem;
+    background: #67a3d2;
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-size: 3em;
+    width: 35%;
+    height: auto;
+    line-height: normal;
+    letter-spacing: normal;
+}
+.renovation-zhuti .service p{
+    margin-left: 0;
+    color: #7a7a7a;
+    font-weight: 400;
+    letter-spacing: -1px;
+    font-size: 2em;
+}
+/* 服务流程头部 */
+.center>.service>.Two-center-text>.Two-center-img>img{
+    width: 50%;
+}
+.center>.service>.Two-center-text>.Two-center-title>p:nth-child(1){
+    color: rgb(0, 118, 202);
+}
+/* 服务流程布局 */
+.center>.service>.Two-center-text{
+    width: 33%;
+}
+/* ======================== */
+/* 预约按钮 */
+.Reservation-btn>center>button{
+    width: 50%;
+    height: 80px;
+    font-size: 3vw;
+}
+/*========================*/
